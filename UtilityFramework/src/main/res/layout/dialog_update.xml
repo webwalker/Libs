@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/exit_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="@string/update_tip"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            style="@style/d_margin"
+            android:layout_width="450dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtVersionInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.bestv.utility.ui.UpdateProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="20dp"
+            android:background="#0FFFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/exit_dialog_selector"
+                android:text="@string/update_ok"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/cancle_btn"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/exit_dialog_selector"
+                android:text="@string/cancel_btn"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
